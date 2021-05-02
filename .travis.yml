@@ -22,6 +22,11 @@ matrix:
       arch: amd64
       dist: focal
 
+    - env: CONFIG=linux_64_python3.9.____cpython UPLOAD_PACKAGES=True PLATFORM=linux-64 DOCKER_IMAGE=quay.io/condaforge/linux-anvil-comp7
+      os: linux
+      arch: amd64
+      dist: focal
+
 script:
   - export CI=travis
   - export GIT_BRANCH="$TRAVIS_BRANCH"
