@@ -1,17 +1,17 @@
 {% set name = 'psocake' %}
-{% set version = '01.00.19' %}
+{% set version = '01.00.20' %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lcls-psana/{{ name }}/archive/V01-00-19.tar.gz
-  sha256: 65f68d4c757ee8057c01f4ab1e88e8fd650801224bbc15c4595eccfb01c69d7a 
+  url: https://github.com/lcls-psana/{{ name }}/archive/V01-00-20.tar.gz
+  sha256: 618c77be431b3094d2c366145207cebf0530b0c2a6caaceac3c525e5783fd6b7
 
 build:
   skip: True  # [win or osx]
-  number: 2
+  number: 0
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
