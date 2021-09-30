@@ -11,7 +11,7 @@ source:
 
 build:
   skip: True  # [win or osx]
-  number: 3
+  number: 4
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
@@ -29,7 +29,6 @@ requirements:
     - pyqt
     - h5py
     - scikit-learn
-    - mpi4py
     - scikit-image
 
 test:
